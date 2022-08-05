@@ -1,41 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Pokedex</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pokedex</title>
 </head>
 <body>
-  <header>
-    <h1>Pokedex</h1>
-  </header>
-  <main>
-    <form class="pokedex-control">
-      <div class="form-control">
-        <label for="filter-name">Name:</label>
-        <input type="text" id="filter-name">
-      </div>
-      <div class="form-control">
-        <label for="filter-type">Type:</label>
-        <select id="filter-type">
-          <option value="">All</option>
-        </select>
-      </div>
-      <div class="form-control">
-        <label for="sort">Sort:</label>
-        <select id="sort-type">
-          <option>Lowest Number (First)</option>
-          <option>Highest Number (First)</option>
-          <option>A-Z</option>
-          <option>Z-A</option>
-        </select>
-      </div>
-    </form>
-    <section class="pokedex"></section>
-  </main>
-  <script src="js/app.js"></script>
+    <section class="pokemon__layout">
+        <h1 class="pokemon__data">
+            <span class="pokemon__number">6 - </span>
+            <span class="pokemon__name">bulbassaur</span>
+        </h1>
+
+        <form class="pokemon__form">
+            <input type="search" class="input__search" placeholder="Name or Number" required>
+        </form>
+
+        <div class="pokemon__btn">
+            <button class="button btn-prev">&lt; Prev</button>
+            <button class="button btn-next">Next &gt;</button>
+        </div>
+
+        <figure>
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="pokemon-image" class="pokemon__image">
+        </figure>
+        <figure>
+            <img src="./assets/img/pokedex.png" alt="pokedex" class="pokedex">
+        </figure>
+    </section>
+    
 </body>
 </html>
